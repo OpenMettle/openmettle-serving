@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-11-16",
+  "source_repository": "https://github.com/OpenMettle/openmettle-serving",
+  "source_revision": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+  "upstream_repository": "https://github.com/sgl-project/sglang",
+  "upstream_base": "fcb3274646e43c16d70fd83806ebb3a5134d5e81",
+  "patchset_sha256": "d9af3651b8857720c996ec27c4341437c1ef80a78cc49cf0eb14536a8565f9cd",
+  "patch_count": 33,
+  "fork_repository": "https://github.com/OpenMettle/sglang",
+  "fork_branch": "openmettle/rdna4",
+  "import_commit": "35c3a9d4996f9205acbb726d29cbf92d0e03634a",
+  "import_tree": "334f60f8c34ca63c9b10f2b5364631c17c69a51c",
+  "published_commit": "2e9dc033cfc7886371dc71ef632848ae7a63fa52",
+  "published_tree": "0113a997f5f01d6232cde76ef097060f43ece24d",
+  "post_import_metadata_paths": [
+    "AGENTS.md",
+    "OPENMETTLE.md",
+    "OPENMETTLE-NOTICES.md",
+    "LICENSES/OpenMettle-serving-MIT.txt",
+    "LICENSES/AITER-MIT.txt",
+    "LICENSES/FLA-MIT.txt"
+  ],
+  "verification": {
+    "independent_patch_application_tree": "334f60f8c34ca63c9b10f2b5364631c17c69a51c",
+    "all_remote_patch_trees_equal_local": true,
+    "engine_paths_changed_by_metadata_commit": [],
+    "changed_python_paths_syntax_checked": 73,
+    "gpu_qualification_performed": false,
+    "image_build_performed": false,
+    "deployment_changed": false
+  },
+  "patches": [
+    {
+      "number": 1,
+      "path": "serving/patches/sglang-main/0001-gfx1201-aot-build.patch",
+      "sha256": "3e4c871bc3c7888a9390969bce94ff0a7e4d0bb7c8eb4eccd7930784d92c8994",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "aa6d2703d9de8924daf0f053f63b4a40027b2409",
+      "tree": "02c5f4500dd39255eac51263acd3baf9de8f40e4"
+    },
+    {
+      "number": 2,
+      "path": "serving/patches/sglang-main/0002-rocm-aot-cxx20.patch",
+      "sha256": "116b7deec08a310ec4affe68c5075ff9f17aef066eb98f3712b72af7ea0d2392",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "c9ba053c29c4c91cc792b621624d62deed9a819e",
+      "tree": "8c492a0eea5c60dc8a53887a7de36b10b6f40b20"
+    },
+    {
+      "number": 3,
+      "path": "serving/patches/sglang-main/0003-outlines-python314.patch",
+      "sha256": "fd3c330dca2d63588c5264854401c4cfb9ee5477fba03fdd70c860362ec08faa",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "0cddd9f4094cc2d2afd2bbbd02b68f8884dbf41a",
+      "tree": "f59cb3f6d823d662d9c773e4a8d4e1fcc9fdf9c4"
+    },
+    {
+      "number": 4,
+      "path": "serving/patches/sglang-main/0004-gfx1201-mxfp4-without-aiter.patch",
+      "sha256": "493901b700fe8c704c95f690335e00dd46668b089d8fe8f0a9d1c90fbb5c99c7",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "c0bf51b3fd6baf357c4eba694358ab0045c576da",
+      "tree": "4132d942b79b780948422af83eec36ca18117c91"
+    },
+    {
+      "number": 5,
+      "path": "serving/patches/sglang-main/0005-pillow13.patch",
+      "sha256": "c63c55983e41b511c6f204047b5329048d41c080c41c7c4b2b8e218fe2d0293c",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "3ef198a5a1a94cc9ba7ba73030409480489ad817",
+      "tree": "24c0a07bd0d0c5ba3dd65f31161ff4c769eb5bd6"
+    },
+    {
+      "number": 6,
+      "path": "serving/patches/sglang-main/0006-gfx1201-mxfp4-verify-gemm.patch",
+      "sha256": "14e262efbd0db321f987da9baf083850b9835aa2022931fa953e77ad15be75a2",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "7ef9063eeb5ec2216b9b975054e3870918116c38",
+      "tree": "2a4ed7609af50a234f0e12338e2fd085f89f095e"
+    },
+    {
+      "number": 7,
+      "path": "serving/patches/sglang-main/0007-gfx1201-packed-gdn-in-proj.patch",
+      "sha256": "d4447de9b6e2e651e7d76f7b631dcafdf5e78d5b451afc448dcdc0762c7715bd",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "01806e088b975285f8f196ea5efbb4ac19ff7f4e",
+      "tree": "5de74988b058ebbca0fde2ebf6ba973dbbcf2454"
+    },
+    {
+      "number": 8,
+      "path": "serving/patches/sglang-main/0008-dflash-gdn-replayssm-commit.patch",
+      "sha256": "f015c7402948239fdfb118e03a473d6362b40a419ce2d8aa28dd29184bddb056",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "218ae4e9804757b92b9e23623123c8b3f25dc569",
+      "tree": "7d23a963f3ff8dd5ab705a643520cda8ae4066cd"
+    },
+    {
+      "number": 9,
+      "path": "serving/patches/sglang-main/0009-gfx1201-fp8-lm-head.patch",
+      "sha256": "db6dc4e456a9a61d7bd9fc2d5dcfb24435cb6842a2d0dd98b694d6182177c1b5",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "c72e3f87249120d8ed358c4197c8a2385e9d9d71",
+      "tree": "e6d3e5660c9d40348b54a5181382b755f8578670"
+    },
+    {
+      "number": 10,
+      "path": "serving/patches/sglang-main/0010-gfx1201-gdn-norm-quant.patch",
+      "sha256": "e465ec19cf88d5209f40aaa2cdd0e4538fd622b37a19188ec7a9ccf38ca8d65f",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "83eedebf0300bc7041a369cb2484fdc83823dc5c",
+      "tree": "49beec76b0974190ecdf491d733aa4a7a0ea6255"
+    },
+    {
+      "number": 11,
+      "path": "serving/patches/sglang-main/0011-gfx1201-route-markers.patch",
+      "sha256": "544cb3fe026a87bd5d60047ce58abd9acd3f58cbc339d3ffeafbb1ed8f66733a",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "1054a76b4f296036ff4642b1c5f35e363c542c2f",
+      "tree": "e1cf2b2085e65a25c7dfd908e321ac07746305d9"
+    },
+    {
+      "number": 12,
+      "path": "serving/patches/sglang-main/0012-gfx1201-verify-attention.patch",
+      "sha256": "b9cf936bbba2e22359515e5b0a368a4e4c47e8692173fd8440953d97d3ca6bf8",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "9c524264c564fb3816f1542bda2c2d9c679c2aa5",
+      "tree": "d318f1b7b0214efe1d53883700f2b9dabf1f9cfe"
+    },
+    {
+      "number": 13,
+      "path": "serving/patches/sglang-main/0013-gfx1201-splitk-wide.patch",
+      "sha256": "ae24c47b419778bdbd5a7075a6ca83ef515a473f4c42a97c5aaa78ea0ea58afb",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "b625e9b22f506e1a77fa56bafabfb0deb6f342f2",
+      "tree": "a6c9b98350265c550e7ee480304c706fe5e61066"
+    },
+    {
+      "number": 14,
+      "path": "serving/patches/sglang-main/0014-gfx1201-pcie-custom-all-reduce.patch",
+      "sha256": "e1788d8d75b0636afcd229aa5b4e12ffdcea70a54f1f34eccdde3bcfd5c26d32",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "ae0acc554f67f8deb05d344c50c53e205d910f53",
+      "tree": "9bedb1349bf16a3c6b73307659bcce85e155b5cb"
+    },
+    {
+      "number": 15,
+      "path": "serving/patches/sglang-main/0015-gfx1201-p1-prefill.patch",
+      "sha256": "ad76bba604144cee92ab09180466bc4e32aee2bd6d2a528ad2b0a246ba619bc4",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "bc83fcbf55adcdc247ecc7be1860d33cd5eb07f9",
+      "tree": "390830aa3a8bef259301de833ca61e382908e24e"
+    },
+    {
+      "number": 16,
+      "path": "serving/patches/sglang-main/0016-gfx1201-extend-attention-warps8.patch",
+      "sha256": "f096245923c67dd77957b89e8be0e554f0c253f8bbd02e43088cfbfdef1046ff",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "a8c7abbffcfc400efef5586310a1a1a8e83dd66e",
+      "tree": "e209cd4faa9970963ed9181e069e3ca6c912b02b"
+    },
+    {
+      "number": 17,
+      "path": "serving/patches/sglang-main/0017-dflash-fused-kv-fp8-draft.patch",
+      "sha256": "c45f4bfd6b773631ceb46eaea1c5d242377bb2e19967d07b03d8646b58b6ec47",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "e05eec480ebb50a625cd0e9b8c910ab91a92ef36",
+      "tree": "44d9a8396b583fbc48eec54a1609d57808f0c1c3"
+    },
+    {
+      "number": 18,
+      "path": "serving/patches/sglang-main/0018-gfx1201-splitk-fused-reduce.patch",
+      "sha256": "bc8c8455b024352e78dd0c0917baa2410aa8e14edf41a0ef48b3822e4a4eb02e",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "4e479c4181e349fa93484ae39cd6c55aac715ff8",
+      "tree": "4eceb520efd72a978833143368fbdef04b6024d9"
+    },
+    {
+      "number": 19,
+      "path": "serving/patches/sglang-main/0019-gfx1201-add-norm-mxfp4.patch",
+      "sha256": "81cc979a451122b441821e48dd1b062158c36ad30aa62b0b4e65377c08b41861",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "bd2ff3815faa221dba470e004d3fd3611e3e3a77",
+      "tree": "9f68939bdfe0dbaf446157b7625bd82f856cbd00"
+    },
+    {
+      "number": 20,
+      "path": "serving/patches/sglang-main/0020-gfx1201-silu-mul-mxfp4.patch",
+      "sha256": "8fbab546ce731e87947fbfadf9501de05dfb462f03e8becf5232212c5469a8e2",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "e41b3e928cc1730c4c641fe03ef8a99be011db43",
+      "tree": "0aff2d40064268cc4002becfa5f782fa528bce9c"
+    },
+    {
+      "number": 21,
+      "path": "serving/patches/sglang-main/0021-gfx1201-verify-attention-b1-tile.patch",
+      "sha256": "2b8fc71844d650212cc984e7da34d16c40f347a19bf08f98bd8e18a2a09a33e2",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "d53a83ef1da4ee2d6c70f7aa6ff4c8b2635b860d",
+      "tree": "142e4255f30f3178d8e6d0a49654f5d3a05b3ccc"
+    },
+    {
+      "number": 22,
+      "path": "serving/patches/sglang-main/0022-gfx1201-mxfp4-kq3.patch",
+      "sha256": "9086b1820a9bbcc61f9d0b7f993144def24c062c4e5dfa2087eee27ad2e27195",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "f60cfdbe60688b25676e40cbb5f5938e385a5ce2",
+      "tree": "82e6a6563bada5755cfffc10ecf1d3070dd2999f"
+    },
+    {
+      "number": 23,
+      "path": "serving/patches/sglang-main/0023-gfx1201-extend-attention-tile32.patch",
+      "sha256": "eca42bc8a263dd8fb001051e9ed4d9e276c3aef7da0ff40bde24b55ef7846aa4",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "7065f525cb62c48624380dfd8930060d5a022252",
+      "tree": "34eebf01990eedd07aed0056b8d6c01111f42800"
+    },
+    {
+      "number": 24,
+      "path": "serving/patches/sglang-main/0024-gfx1201-p1-from-kq3.patch",
+      "sha256": "df11f2b8599d84f45b9bd889604884bb4a6b5dba9885e714ad4d28890cfe9732",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "c7059ab3951640cbb82f53b493eed72230b26dd0",
+      "tree": "3f690ff54d3909e9ac3eec744d99581c59552715"
+    },
+    {
+      "number": 25,
+      "path": "serving/patches/sglang-main/0025-gfx1201-prefill-custom-all-reduce.patch",
+      "sha256": "81dbf31a0a3a97b4588aa3847690f3084f297a9c2c8da35f7a57a2bae2b5951c",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "bbb4c28718f4c6d2e0e6184cdf2b8fcc66629e8e",
+      "tree": "f7b3e24cc3e2cca31443bbedd7ad081a2cbb499a"
+    },
+    {
+      "number": 26,
+      "path": "serving/patches/sglang-main/0026-gfx1201-fp8-kv-dequant.patch",
+      "sha256": "b713d14977198a5aca0a7c4a9a518de6aeba2497c70fd2646e60a99c826ccc7b",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "97f367b645cf96908be028bc0cfd3ca2661b6dda",
+      "tree": "1d3f226e1504d4630828345094ce771dfa0d2009"
+    },
+    {
+      "number": 27,
+      "path": "serving/patches/sglang-main/0027-gfx1201-fp8-kv-hw-decode.patch",
+      "sha256": "789dd3aeada37c6e7cd19f82c3e14306bd1aeb092f0758da408880992c6cb93c",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "761efca373438231be3934077bc10ff4d88a8f91",
+      "tree": "d0c45266cb8bae707f51bc17073489f028fb9733"
+    },
+    {
+      "number": 28,
+      "path": "serving/patches/sglang-main/0028-upstream-47057-swa-checkpoint-windows.patch",
+      "sha256": "675c568e0e69ef0c7adb784315c151b4499a22cdb4cefb1b0474b576566f1d54",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "9bacc7223aaa9e3ebacb404939f22bf9b6f863b5",
+      "tree": "34c11c74b149fbe1aec818da535738b1ed4a10e8"
+    },
+    {
+      "number": 29,
+      "path": "serving/patches/sglang-main/0029-upstream-47058-dflash-draft-kv-bundling.patch",
+      "sha256": "1ab48fc32bfbbc7c013daf6f238f439cd633b5cd45d59a37ba4e7194b5104cf5",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "ca8e9d9a3f950cea23045d127afadf5ccb8ba175",
+      "tree": "63e3ce617dda09ab9e171893d0110060ccd415d9"
+    },
+    {
+      "number": 30,
+      "path": "serving/patches/sglang-main/0030-gfx1201-draft-kv-bundling.patch",
+      "sha256": "76068bae0e1a2eed4af6b06a18fce39d7a4fd9c4243f6470cc1f4b8753916caa",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "19c655f5e73e620aaa0f88729f6a6bb2df0107ee",
+      "tree": "2527d067ac24c788c894204ac32c0530ff40edbe"
+    },
+    {
+      "number": 31,
+      "path": "serving/patches/sglang-main/0031-gfx1201-elastic-kv-tail-allocator.patch",
+      "sha256": "9d07a21b5e15e5c4f389a8b121b1a6cf854b448d03bcbe82b91cc749b9557b80",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "93ba37297bc5494b98e83adc5a79c772cd088acc",
+      "tree": "d3dac7b2ad5297565a7dc878387653100cfe2e98"
+    },
+    {
+      "number": 32,
+      "path": "serving/patches/sglang-main/0032-gfx1201-elastic-kv-tail-buffers.patch",
+      "sha256": "5b0fd59f7b05a445ece4073634b22fe9f6f3d8cfd10d4737d693c090e84a907e",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "4413a3fffa4ea20dfe2263b9ff851d4333e00c33",
+      "tree": "32d6d7af7e66d316c587b25678888da5de267507"
+    },
+    {
+      "number": 33,
+      "path": "serving/patches/sglang-main/0033-gfx1201-elastic-kv-tail-control.patch",
+      "sha256": "b5fdfd515017d4fa7978610854862c618587da6b571c5ae88be35a61983c6d02",
+      "last_source_edit_commit": "8a53e9c2bf2837d4cd9296b18627067be98f27e8",
+      "fork_commit": "35c3a9d4996f9205acbb726d29cbf92d0e03634a",
+      "tree": "334f60f8c34ca63c9b10f2b5364631c17c69a51c"
+    }
+  ]
+}

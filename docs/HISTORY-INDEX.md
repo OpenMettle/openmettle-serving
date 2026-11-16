@@ -1,5 +1,14 @@
 # History index
 
+## Repository migration — 16 November 2026
+
+[REPOSITORY-MIGRATION-20261116.md](REPOSITORY-MIGRATION-20261116.md) records the
+transfer to OpenMettle and the import of patches 0001–0033 into the SGLang fork.
+It supersedes earlier instructions to develop new engine changes as patches in
+this repository. The old series remains frozen for the existing workstation
+build. Earlier deployment and qualification statements remain dated evidence;
+the migration does not establish what is running now.
+
 This page lists every older record in the repository and says what replaced it.
 The records themselves are never edited. When a record is superseded, the note
 goes here.

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/OpenMettle/sglang.git",
+  "branch": "openmettle/rdna4",
+  "commit": "2e9dc033cfc7886371dc71ef632848ae7a63fa52",
+  "tree": "0113a997f5f01d6232cde76ef097060f43ece24d",
+  "upstream_commit": "fcb3274646e43c16d70fd83806ebb3a5134d5e81",
+  "patch_application": "none",
+  "import_manifest": "../docs/SGLANG-IMPORT-20261116.json",
+  "status": "source-equivalence-verified",
+  "build_integration": "not-yet-consumed-by-existing-workstation-pipeline",
+  "image_digest": null
+}

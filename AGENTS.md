@@ -1,5 +1,25 @@
 # Agent briefing
 
+## Current repository ownership — 16 November 2026
+
+The repository is now `OpenMettle/openmettle-serving`. For the source split and
+verified import, read [the migration record](docs/REPOSITORY-MIGRATION-20261116.md)
+and [source pin](serving/sglang-source.json) first.
+
+- Maintain SGLang engine changes and engine regression tests in
+  `OpenMettle/sglang` on `openmettle/rdna4`; keep architecture-independent changes
+  portable. Keep `main` for upstream history. Create other architecture branches
+  only when there is work that requires them.
+- Keep `serving/patches/sglang-main/*.patch` frozen as the compatibility input for
+  the existing workstation build. Do not maintain a second evolving copy here.
+- Keep build integration, benchmarks, tools and qualification records here.
+  Kubernetes deployment packaging belongs in `OpenMettle/openmettle-deploy`.
+- Do not apply the frozen patches on top of the fork's imported source commit.
+- This migration is source-equivalence verification, not a new runtime
+  qualification or deployment. The dated live-state table below is historical.
+
+The existing immutability, feature-gate and evidence rules continue to apply.
+
 Read this before changing anything in this repository. It says what the
 repository is, what is live today, and the rules that protect the record.
 

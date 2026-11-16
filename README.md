@@ -1,4 +1,41 @@
-# Spry.ai RDNA4 Serving
+# OpenMettle Serving
+
+## Repository migration — 16 November 2026
+
+This repository moved from `Drgr33nSenior/Spry.ai-rdna4-serving` to
+[`OpenMettle/openmettle-serving`](https://github.com/OpenMettle/openmettle-serving)
+with its Git history, issues and pull requests retained.
+
+New SGLang engine work belongs in
+[`OpenMettle/sglang`, branch `openmettle/rdna4`](https://github.com/OpenMettle/sglang/tree/openmettle/rdna4).
+That branch imports all 33 patches at the existing upstream pin. The repository
+keeps the generic SGLang name; architecture branches distinguish maintained
+ports. `main` retains upstream history. An NVIDIA branch can be introduced when
+there are NVIDIA-specific changes; shared features should remain portable.
+
+This serving repository retains benchmark clients, check tools, research,
+qualification evidence and the frozen patch series needed by the existing
+workstation build. It is the home for curated build recipes and dependency pins;
+generic Kubernetes packaging belongs in `OpenMettle/openmettle-deploy`.
+
+`openmettle-serving` is model-independent. The existing Qwen work is the first
+profile family, not a reason to create one repository per model. Keep each
+model's weight revision, quantisation, backend image, resource budget, launch
+settings and qualification evidence together in a versioned profile. A profile
+can deploy as its own Kubernetes workload and scale independently. Introduce
+separate source repositories when maintaining a distinct upstream engine or
+component, rather than for every model served by the same engine.
+
+See the [migration record](docs/REPOSITORY-MIGRATION-20261116.md) and
+[machine-readable source pin](serving/sglang-source.json). The source import does
+not change the workstation build or deployed image. A fork-based build must
+disable the old patch-application step because these changes are already
+committed. Rebuild and qualify before changing deployed image digests.
+
+The sections below describe the earlier workstation integration and dated
+results. Their 12 November snapshot is historical, not a current deployment check.
+
+## Existing workstation integration
 
 This repository makes Qwen3.8-27B run fast on two AMD Radeon AI PRO R9700 GPUs.
 It holds the SGLang patches, benchmark client, GPU check tools and research
